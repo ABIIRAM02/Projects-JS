@@ -1,0 +1,115 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html , body 
+{
+    height: 100%;
+    width: 100%;
+}
+section
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1
+{
+    font-size: 30px;
+    font-weight: bolder;
+    position: relative;
+}
+h1::after
+{
+    border-radius: 100%;
+    box-shadow: 0 0 10px 2px rgb(100, 223, 245);
+    content: '';
+    height: 3px;
+    width: 150px;
+    background: #007bff;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%)
+    
+}
+.container
+{
+    position: relative;
+    padding: 20PX 60px 20px 20px;
+    line-height: 20px;
+    height: 30%;
+    width: 40%;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px 5px rgb(103, 170, 232);
+    overflow: hidden;
+
+}
+.contains
+{
+    line-height: 30PX;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 20px 0;
+    color: #007bff;
+
+}
+
+.contains img
+{
+    margin-right: 20px;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+
+.sidebar
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: whitesmoke;
+    border-radius: 0 20px 20px 0 ;
+    outline: none;
+    border: none;
+    background:rgb(103, 170, 232);
+    width: 60px;
+    height: 100%;
+    padding: 15px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.sidebar>*
+{
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 100%;
+    color:rgb(32, 107, 178);
+    background-color: whitesmoke;
+}
+#box
+{
+    margin-bottom: 15%;
+}
+#boxes
+{
+    position: relative;
+    transition: 0.5s;
+}
+
+#AU:hover , #AD:hover
+{
+    font-size: large;
+    transition: 0.3s;
+    border: 3px solid whitesmoke;
+}

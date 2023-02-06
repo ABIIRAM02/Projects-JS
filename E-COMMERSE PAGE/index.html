@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>E-COMMMERSE PAGE</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="small">
+
+            <img src="./images/model1.jpg" alt="" onclick="myFunction(this)">
+            <img src="./images/model2.jpg" alt="" onclick="myFunction(this)">
+            <img src="./images/model3.jpg" alt="" onclick="myFunction(this)">
+            <img src="./images/model4.jpg" alt="" onclick="myFunction(this)">
+
+        </div>
+
+        <div class="main">
+
+            <img id="main" src="./images/main.jpg" alt="">
+
+        </div>
+
+    </section>
+
+    <section class="container-2">
+        <div class="contains">
+        <h2>CAVA Waffle T-Shirt | Round Neck | Solid | Relaxed Fit | Comfortable & Stylish | Men's T- Shirt</h2>
+        <ul>
+            <li>Care Instructions: Hand Wash Only</li>
+            <li>Fit Type: Relaxed Fit</li>
+            <li>The Waffle T-shirt is an oversized relaxed silhouette with a drop shoulder detail</li>
+            <li>This Package Contain T-shirt only</li>
+        </ul>
+        <div class="btn">
+
+        <h2>₹1500.00</h2>
+
+            <button type="submit" onclick="btnFunction()"> BUY </button>
+            <button type="submit" title=" add to cart " onclick="btnFunction()">CART</button>
+
+        </div>
+
+    </div>
+    </section>
+
+    <script>
+        function myFunction(small) {
+            var main = document.getElementById("main");
+            main.src = small.src;
+         }
+
+        function btnFunction()
+        {
+            alert("FOOL SPORTED 🫵")
+        }
+
+    </script>
+</body>
+
+</html>

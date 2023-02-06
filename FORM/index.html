@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="requiredviewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>FORM</title>
+</head>
+<body required>
+    <section class="container">
+
+        <div class="form">
+            <h1 id="title">SIGN UP</h1>
+            <form action="">
+
+                <div class="form-details" id="box">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="name" required>
+                </div>
+
+                <div class="form-details">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="email" required>
+                </div>
+
+                <div class="form-details">
+                    <i class="fa-sharp fa-solid fa-eye-slash" id="fa-eye" onclick="clickFunction(this)"></i>
+                    <input type="password" placeholder="password" id="fa-input-1" required>
+                </div>
+
+                <div class="form-details" id="password">
+                    <i class="fa-sharp fa-solid fa-eye-slash" id="fa-eye" onclick="clickFunction(this)" ></i>
+                    <input type="password" placeholder="confirm password" id="fa-input-2" required>
+                </div>
+
+                <div class="digin" >
+                <input type="checkbox" ><label id="digin" for="" > AGREE <a href="#">Terms & Conditions</a></label>
+                <button class="digin-btn" required>DIG IN</button>
+                </div>
+
+                <div class="btn">
+                <button id="signup-btn" type="reset" >SIGN UP</button>
+                <button id="login-btn" type="reset" class="disable" >LOG IN</button>
+                </div>
+
+
+            </form>
+        </div>
+
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
